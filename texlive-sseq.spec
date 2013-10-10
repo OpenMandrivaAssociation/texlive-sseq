@@ -1,13 +1,13 @@
-# revision 15878
+# revision 31585
 # category Package
 # catalog-ctan /macros/latex/contrib/sseq
-# catalog-date 2009-04-10 15:43:04 +0200
+# catalog-date 2013-09-06 14:59:23 +0200
 # catalog-license lppl
-# catalog-version 2.0
+# catalog-version 2.01
 Name:		texlive-sseq
-Version:	2.0
-Release:	2
-Summary:	Spectral sequence diagrams
+Version:	2.01
+Release:	1
+Summary:	Typesetting spectral sequence charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sseq
 License:	LPPL
@@ -53,17 +53,3 @@ conditionals are available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
-+ Revision: 756164
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
-+ Revision: 719574
-- texlive-sseq
-- texlive-sseq
-- texlive-sseq
-- texlive-sseq
-
