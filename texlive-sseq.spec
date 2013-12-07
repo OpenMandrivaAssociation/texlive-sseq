@@ -6,7 +6,7 @@
 # catalog-version 2.01
 Name:		texlive-sseq
 Version:	2.01
-Release:	3
+Release:	4
 Summary:	Typesetting spectral sequence charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sseq
