@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-sseq
 Version:	2.0
-Release:	2
+Release:	3
 Summary:	Spectral sequence diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sseq
