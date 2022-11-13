@@ -1,19 +1,13 @@
-# revision 31585
-# category Package
-# catalog-ctan /macros/latex/contrib/sseq
-# catalog-date 2013-09-06 14:59:23 +0200
-# catalog-license lppl
-# catalog-version 2.01
 Name:		texlive-sseq
-Version:	2.01
-Release:	10
+Version:	31585
+Release:	1
 Summary:	Typesetting spectral sequence charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sseq
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sseq.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sseq.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sseq.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sseq.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sseq.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sseq.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ graphics model, and control structures such as loops and
 conditionals are available.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,7 +40,8 @@ conditionals are available.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
