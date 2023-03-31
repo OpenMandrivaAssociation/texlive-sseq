@@ -1,6 +1,6 @@
 Name:		texlive-sseq
 Version:	31585
-Release:	1
+Release:	2
 Summary:	Typesetting spectral sequence charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sseq
